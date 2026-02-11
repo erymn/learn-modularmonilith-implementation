@@ -1,0 +1,16 @@
+using HazPro.Marketing.Model;
+
+namespace HazPro.Marketing.Services;
+
+internal class CampaignService
+{
+    public List<CampaignDto> ListCampaigns()
+    {
+        return new List<CampaignDto>()
+        {
+            new CampaignDto(1, "Emails", DateTime.Now,15, "Active Users"),
+            new CampaignDto(2, "Messages", DateTime.Now, 14, "Active Users"),
+            new CampaignDto(3, "Promotions", DateTime.Now, 14, "Active Users")
+        };
+    }
+}

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Sinau\\DotNet\\ModularMonolithImpl\\HazPro.ModularMonolith.Samples\\HazPro.MM.Host\\HazPro.MM.Host.csproj",
+      "projectUniqueName": "D:\\Sinau\\DotNet\\ModularMonolith\\learn-modularmonilith-implementation\\src\\HazPro.MM.Host\\HazPro.MM.Host.csproj",
       "projectName": "HazPro.MM.Host",
-      "projectPath": "D:\\Sinau\\DotNet\\ModularMonolithImpl\\HazPro.ModularMonolith.Samples\\HazPro.MM.Host\\HazPro.MM.Host.csproj",
+      "projectPath": "D:\\Sinau\\DotNet\\ModularMonolith\\learn-modularmonilith-implementation\\src\\HazPro.MM.Host\\HazPro.MM.Host.csproj",
       "packagesPath": "C:\\Users\\erymn\\.nuget\\packages\\",
-      "outputPath": "D:\\Sinau\\DotNet\\ModularMonolithImpl\\HazPro.ModularMonolith.Samples\\HazPro.MM.Host\\obj\\",
+      "outputPath": "D:\\Sinau\\DotNet\\ModularMonolith\\learn-modularmonilith-implementation\\src\\HazPro.MM.Host\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

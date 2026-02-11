@@ -1,4 +1,4 @@
-namespace HazPro.Marketing.Model;
+namespace HazPro.Payroll.Model;
 
 public class Invoice
 {
