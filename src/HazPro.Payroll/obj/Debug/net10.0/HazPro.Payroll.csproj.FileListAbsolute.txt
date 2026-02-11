@@ -1,0 +1,11 @@
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.Payroll\bin\Debug\net10.0\HazPro.Payroll.deps.json
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.Payroll\bin\Debug\net10.0\HazPro.Payroll.dll
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.Payroll\bin\Debug\net10.0\HazPro.Payroll.pdb
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.Payroll\obj\Debug\net10.0\HazPro.Payroll.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.Payroll\obj\Debug\net10.0\HazPro.Payroll.AssemblyInfoInputs.cache
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.Payroll\obj\Debug\net10.0\HazPro.Payroll.AssemblyInfo.cs
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.Payroll\obj\Debug\net10.0\HazPro.Payroll.csproj.CoreCompileInputs.cache
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.Payroll\obj\Debug\net10.0\HazPro.Payroll.dll
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.Payroll\obj\Debug\net10.0\refint\HazPro.Payroll.dll
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.Payroll\obj\Debug\net10.0\HazPro.Payroll.pdb
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.Payroll\obj\Debug\net10.0\ref\HazPro.Payroll.dll

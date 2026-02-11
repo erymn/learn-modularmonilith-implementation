@@ -1,0 +1,11 @@
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.HR\bin\Debug\net10.0\HazPro.HR.deps.json
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.HR\bin\Debug\net10.0\HazPro.HR.dll
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.HR\bin\Debug\net10.0\HazPro.HR.pdb
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.HR\obj\Debug\net10.0\HazPro.HR.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.HR\obj\Debug\net10.0\HazPro.HR.AssemblyInfoInputs.cache
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.HR\obj\Debug\net10.0\HazPro.HR.AssemblyInfo.cs
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.HR\obj\Debug\net10.0\HazPro.HR.csproj.CoreCompileInputs.cache
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.HR\obj\Debug\net10.0\HazPro.HR.dll
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.HR\obj\Debug\net10.0\refint\HazPro.HR.dll
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.HR\obj\Debug\net10.0\HazPro.HR.pdb
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.HR\obj\Debug\net10.0\ref\HazPro.HR.dll

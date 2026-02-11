@@ -1,0 +1,11 @@
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.Marketing\bin\Debug\net10.0\HazPro.Marketing.deps.json
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.Marketing\bin\Debug\net10.0\HazPro.Marketing.dll
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.Marketing\bin\Debug\net10.0\HazPro.Marketing.pdb
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.Marketing\obj\Debug\net10.0\HazPro.Marketing.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.Marketing\obj\Debug\net10.0\HazPro.Marketing.AssemblyInfoInputs.cache
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.Marketing\obj\Debug\net10.0\HazPro.Marketing.AssemblyInfo.cs
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.Marketing\obj\Debug\net10.0\HazPro.Marketing.csproj.CoreCompileInputs.cache
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.Marketing\obj\Debug\net10.0\HazPro.Marketing.dll
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.Marketing\obj\Debug\net10.0\refint\HazPro.Marketing.dll
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.Marketing\obj\Debug\net10.0\HazPro.Marketing.pdb
+D:\Sinau\DotNet\ModularMonolithImpl\HazPro.ModularMonolith.Samples\HazPro.Marketing\obj\Debug\net10.0\ref\HazPro.Marketing.dll
