@@ -21,3 +21,4 @@ D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.
 D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.Payroll\obj\Debug\net10.0\refint\HazPro.Payroll.dll
 D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.Payroll\obj\Debug\net10.0\HazPro.Payroll.pdb
 D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.Payroll\obj\Debug\net10.0\ref\HazPro.Payroll.dll
+D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.Payroll\obj\Debug\net10.0\HazPro.Payroll.csproj.AssemblyReference.cache

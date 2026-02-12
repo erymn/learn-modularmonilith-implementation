@@ -1,11 +1,234 @@
 {
   "version": 3,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "FastEndpoints/7.2.0": {
+        "type": "package",
+        "dependencies": {
+          "FastEndpoints.Attributes": "7.2.0",
+          "FastEndpoints.JobQueues": "7.2.0",
+          "FastEndpoints.Messaging": "7.2.0",
+          "FluentValidation": "12.1.1"
+        },
+        "compile": {
+          "lib/net10.0/FastEndpoints.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/FastEndpoints.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "FastEndpoints.Attributes/7.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/FastEndpoints.Attributes.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/FastEndpoints.Attributes.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "FastEndpoints.Core/7.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/FastEndpoints.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/FastEndpoints.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "FastEndpoints.JobQueues/7.2.0": {
+        "type": "package",
+        "dependencies": {
+          "FastEndpoints.Messaging": "7.2.0"
+        },
+        "compile": {
+          "lib/net10.0/FastEndpoints.JobQueues.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/FastEndpoints.JobQueues.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "FastEndpoints.Messaging/7.2.0": {
+        "type": "package",
+        "dependencies": {
+          "FastEndpoints.Core": "7.2.0",
+          "FastEndpoints.Messaging.Core": "7.2.0"
+        },
+        "compile": {
+          "lib/net10.0/FastEndpoints.Messaging.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/FastEndpoints.Messaging.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "FastEndpoints.Messaging.Core/7.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/FastEndpoints.Messaging.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/FastEndpoints.Messaging.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "FluentValidation/12.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "FastEndpoints/7.2.0": {
+      "sha512": "igYC/SHrNwv8Ek+o0rjGALIONCIuQP7a6CMLSHGKRzFpjwdbI4JvsLlAfkb720bIF3B/dH1zRcEZejHeyDL2Rg==",
+      "type": "package",
+      "path": "fastendpoints/7.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fastendpoints.7.2.0.nupkg.sha512",
+        "fastendpoints.nuspec",
+        "icon.png",
+        "lib/net10.0/FastEndpoints.dll",
+        "lib/net10.0/FastEndpoints.xml",
+        "lib/net8.0/FastEndpoints.dll",
+        "lib/net8.0/FastEndpoints.xml",
+        "lib/net9.0/FastEndpoints.dll",
+        "lib/net9.0/FastEndpoints.xml"
+      ]
+    },
+    "FastEndpoints.Attributes/7.2.0": {
+      "sha512": "gn6/JW0QaSANrcUXDfexW8y3bDT/dYWk0sxvvgJWoRTR1WIyipkLE9AIWdBeVsVbVQP9gZWKgVzRMMm86Zq9HA==",
+      "type": "package",
+      "path": "fastendpoints.attributes/7.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fastendpoints.attributes.7.2.0.nupkg.sha512",
+        "fastendpoints.attributes.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/FastEndpoints.Attributes.dll",
+        "lib/netstandard2.0/FastEndpoints.Attributes.xml"
+      ]
+    },
+    "FastEndpoints.Core/7.2.0": {
+      "sha512": "nvclrOvmtyhR2WggtuuqI5aj4ICaMOOBx/buPlUqJ1S8OV5hgHr5SEEKfA9eRihiFJ3LGMcyxTd2+YWtFaeZAA==",
+      "type": "package",
+      "path": "fastendpoints.core/7.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fastendpoints.core.7.2.0.nupkg.sha512",
+        "fastendpoints.core.nuspec",
+        "icon.png",
+        "lib/netstandard2.1/FastEndpoints.Core.dll",
+        "lib/netstandard2.1/FastEndpoints.Core.xml"
+      ]
+    },
+    "FastEndpoints.JobQueues/7.2.0": {
+      "sha512": "IC6EA/pBMRoXl5EQZrzZfXk6gyzxE6tBipQ8r+kkRuIXQX6LScvlL34gNs0kjXHO1+BS85/gwatDpvD6T5uNDw==",
+      "type": "package",
+      "path": "fastendpoints.jobqueues/7.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fastendpoints.jobqueues.7.2.0.nupkg.sha512",
+        "fastendpoints.jobqueues.nuspec",
+        "icon.png",
+        "lib/net10.0/FastEndpoints.JobQueues.dll",
+        "lib/net10.0/FastEndpoints.JobQueues.xml",
+        "lib/net8.0/FastEndpoints.JobQueues.dll",
+        "lib/net8.0/FastEndpoints.JobQueues.xml",
+        "lib/net9.0/FastEndpoints.JobQueues.dll",
+        "lib/net9.0/FastEndpoints.JobQueues.xml"
+      ]
+    },
+    "FastEndpoints.Messaging/7.2.0": {
+      "sha512": "29i3GfBpQ2VJA9XRb+k2IRIWRaxsxeDrVBgL78Gq8t3BMjq/QNBdN2P83uJfV0kJGfV813SviDbPo3gk+OW8MQ==",
+      "type": "package",
+      "path": "fastendpoints.messaging/7.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fastendpoints.messaging.7.2.0.nupkg.sha512",
+        "fastendpoints.messaging.nuspec",
+        "icon.png",
+        "lib/net10.0/FastEndpoints.Messaging.dll",
+        "lib/net10.0/FastEndpoints.Messaging.xml",
+        "lib/net8.0/FastEndpoints.Messaging.dll",
+        "lib/net8.0/FastEndpoints.Messaging.xml",
+        "lib/net9.0/FastEndpoints.Messaging.dll",
+        "lib/net9.0/FastEndpoints.Messaging.xml"
+      ]
+    },
+    "FastEndpoints.Messaging.Core/7.2.0": {
+      "sha512": "uRbFy6dmVie3wwlOjgrrE6lu5+U1SXmo8kwsr3Xzv/WnHrDw4vXFiqb8FmuS9q9jMGDn2UoYii5H0jC9g1RWDg==",
+      "type": "package",
+      "path": "fastendpoints.messaging.core/7.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fastendpoints.messaging.core.7.2.0.nupkg.sha512",
+        "fastendpoints.messaging.core.nuspec",
+        "icon.png",
+        "lib/netstandard2.1/FastEndpoints.Messaging.Core.dll",
+        "lib/netstandard2.1/FastEndpoints.Messaging.Core.xml"
+      ]
+    },
+    "FluentValidation/12.1.1": {
+      "sha512": "EPpkIe1yh1a0OXyC100oOA8WMbZvqUu5plwhvYcb7oSELfyUZzfxV48BLhvs3kKo4NwG7MGLNgy1RJiYtT8Dpw==",
+      "type": "package",
+      "path": "fluentvalidation/12.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.12.1.1.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net8.0/FluentValidation.dll",
+        "lib/net8.0/FluentValidation.xml"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "FastEndpoints >= 7.2.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\erymn\\.nuget\\packages\\": {},
@@ -57,6 +280,12 @@
     "frameworks": {
       "net10.0": {
         "targetAlias": "net10.0",
+        "dependencies": {
+          "FastEndpoints": {
+            "target": "Package",
+            "version": "[7.2.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
