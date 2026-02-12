@@ -91,4 +91,69 @@
    - Add http file in solution to test the code
      
      ![](assets/2026-02-12-10-43-05-{0DD93940-3759-4AF8-82EC-B7C38AB65E7C}.png)
-8. 
+8. Enhancing API with FastEndpoints
+   
+   ```powershell
+   dotnet add HazPro.MM.Host package FastEndpoints
+   ```
+   
+   ```powershell
+   dotnet add HazPro.HR package FastEndpoints
+   ```
+   
+   ```powershell
+   dotnet add HazPro.Marketing package FastEndpoints
+   ```
+   
+   ```powershell
+   dotnet add HazPro.Payroll package FastEndpoints
+   ```
+   
+   atau bisa dari Manage Nuget di Visual Studio atau Rider
+   
+   ![](assets/2026-02-12-10-55-57-{C4DC39A6-0CF0-466B-B8EA-CBCAA72C6F9E}.png)
+   
+   Create new Endpoint for FastEndpoints implementation
+   
+   ![](assets/2026-02-12-13-54-15-{348402F3-DA7E-4FFE-A035-9CD8CCD9010D}.png)
+   
+   ![](assets/2026-02-12-13-54-29-{18761BF3-9407-493A-8FC1-D55D4451DD33}.png)
+   
+   ![](assets/2026-02-12-13-54-41-{72D201E4-4EC0-46BA-AA46-57F0154CB58C}.png)
+9. Configure FastEndpoints in Host Application
+   
+   ![](assets/2026-02-12-14-00-44-{E4E23BD2-4C24-43B0-9308-34AA470119AD}.png)
+10. Modeling Entities and Separating DTO's
+    
+    The key reason:
+    - `Separation of concern`, entity mewakili core bisnis domain model. DTO didesign untuk data transfer antar layer
+    
+    - `Flexibility & Evolution`, entity mungkin memiliki perbedaan dengan DTO. Perubahan dari cara present data seharusnya tidak mempengaruhi core bisnis
+    
+    - `Data Integrity & Encapsulation`, Entity bisa memiliki logic bisnis dan rule validasi. Dengan tetap memisahkannya dari DTO, kita bisa memastikan bahwa rule akan konsisten terhadap data kita. DTO biasanya secara struktur lebih simple dan fokus pada data transport
+    
+    Step to modeling entities
+    
+    - Rename set; entity into private set;
+      
+      ![](assets/2026-02-12-16-26-00-{4BDB8B22-A67B-4A35-9CBA-7F89DE75ED27}.png)
+      
+      Add new constructor and update method:
+      
+      ![](assets/2026-02-12-16-30-57-{956CCB57-3B1A-4C7A-8E32-FC7FE3F10392}.png)
+    
+    - Add library GuardClauses
+      
+      ![](assets/2026-02-12-16-36-01-{294BDA4E-E174-4D5C-BF16-84CACB85BB92}.png)
+      
+      and add validation rules into entity (Enforcing Business rule)
+      
+      ![](assets/2026-02-12-16-43-49-{A8EFD616-80B8-48DC-901C-080DAC72EA4B}.png)
+11. Defining Repository Interface
+    
+    ![](assets/2026-02-12-17-06-38-{AF27DAAE-6327-4D8E-B623-E40F7EF81D98}.png)
+    
+    ![](assets/2026-02-12-17-07-05-{00428631-3A4B-4E52-8885-7658CA3CD63A}.png)
+    
+    ![](assets/2026-02-12-17-07-19-{C9E0521D-8B9F-4920-A9FB-B2B41A50A80D}.png)
+12. 
