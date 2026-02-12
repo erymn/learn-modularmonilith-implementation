@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Sinau\\DotNet\\ModularMonolithImpl\\HazPro.ModularMonolith.Samples\\HazPro.HR\\HazPro.HR.csproj": {}
+    "D:\\Sinau\\DotNet\\ModularMonolith\\learn-modularmonilith-implementation\\src\\HazPro.HR\\HazPro.HR.csproj": {}
   },
   "projects": {
-    "D:\\Sinau\\DotNet\\ModularMonolithImpl\\HazPro.ModularMonolith.Samples\\HazPro.HR\\HazPro.HR.csproj": {
+    "D:\\Sinau\\DotNet\\ModularMonolith\\learn-modularmonilith-implementation\\src\\HazPro.HR\\HazPro.HR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Sinau\\DotNet\\ModularMonolithImpl\\HazPro.ModularMonolith.Samples\\HazPro.HR\\HazPro.HR.csproj",
+        "projectUniqueName": "D:\\Sinau\\DotNet\\ModularMonolith\\learn-modularmonilith-implementation\\src\\HazPro.HR\\HazPro.HR.csproj",
         "projectName": "HazPro.HR",
-        "projectPath": "D:\\Sinau\\DotNet\\ModularMonolithImpl\\HazPro.ModularMonolith.Samples\\HazPro.HR\\HazPro.HR.csproj",
+        "projectPath": "D:\\Sinau\\DotNet\\ModularMonolith\\learn-modularmonilith-implementation\\src\\HazPro.HR\\HazPro.HR.csproj",
         "packagesPath": "C:\\Users\\erymn\\.nuget\\packages\\",
-        "outputPath": "D:\\Sinau\\DotNet\\ModularMonolithImpl\\HazPro.ModularMonolith.Samples\\HazPro.HR\\obj\\",
+        "outputPath": "D:\\Sinau\\DotNet\\ModularMonolith\\learn-modularmonilith-implementation\\src\\HazPro.HR\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
