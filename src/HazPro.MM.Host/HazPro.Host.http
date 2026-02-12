@@ -1,0 +1,17 @@
+### Envi
+@Host_HostAddress = http://localhost:5271/
+
+### HR
+GET {{Host_HostAddress}}hr/employees
+Accept: application/json
+###
+
+### Marketing
+GET {{Host_HostAddress}}marketing/campaigns
+Accept: application/json
+###
+
+### Payroll
+GET {{Host_HostAddress}}payroll/invoices
+Accept: application/json
+###

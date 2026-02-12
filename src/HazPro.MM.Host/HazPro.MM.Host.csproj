@@ -6,4 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HazPro.HR\HazPro.HR.csproj" />
+    <ProjectReference Include="..\HazPro.Marketing\HazPro.Marketing.csproj" />
+    <ProjectReference Include="..\HazPro.Payroll\HazPro.Payroll.csproj" />
+  </ItemGroup>
+
 </Project>

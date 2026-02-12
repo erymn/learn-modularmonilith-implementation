@@ -1,4 +1,4 @@
-namespace HazPro.Payroll.Model;
+namespace HazPro.Marketing.Model;
 
 public class Campaign
 {
