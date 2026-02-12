@@ -55,3 +55,11 @@ D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.
 D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.MM.Host\obj\Debug\net10.0\HazPro.MM.Host.pdb
 D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.MM.Host\obj\Debug\net10.0\HazPro.MM.Host.genruntimeconfig.cache
 D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.MM.Host\obj\Debug\net10.0\ref\HazPro.MM.Host.dll
+D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.MM.Host\bin\Debug\net10.0\HazPro.HR.dll
+D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.MM.Host\bin\Debug\net10.0\HazPro.Marketing.dll
+D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.MM.Host\bin\Debug\net10.0\HazPro.Payroll.dll
+D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.MM.Host\bin\Debug\net10.0\HazPro.HR.pdb
+D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.MM.Host\bin\Debug\net10.0\HazPro.Marketing.pdb
+D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.MM.Host\bin\Debug\net10.0\HazPro.Payroll.pdb
+D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.MM.Host\obj\Debug\net10.0\HazPro.MM.Host.csproj.AssemblyReference.cache
+D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.MM.Host\obj\Debug\net10.0\HazPro.M.0FFDC284.Up2Date

@@ -2,7 +2,7 @@ using HazPro.HR.Model;
 
 namespace HazPro.HR.Services;
 
-internal class EmployeeServices
+internal class EmployeeServices : IEmployeeServices
 {
     public List<EmployeeDto> ListEmployees()
     {

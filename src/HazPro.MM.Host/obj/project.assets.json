@@ -1,11 +1,71 @@
 {
   "version": 3,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "HazPro.HR/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/HazPro.HR.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HazPro.HR.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "HazPro.Marketing/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/HazPro.Marketing.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HazPro.Marketing.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "HazPro.Payroll/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/HazPro.Payroll.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HazPro.Payroll.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "HazPro.HR/1.0.0": {
+      "type": "project",
+      "path": "../HazPro.HR/HazPro.HR.csproj",
+      "msbuildProject": "../HazPro.HR/HazPro.HR.csproj"
+    },
+    "HazPro.Marketing/1.0.0": {
+      "type": "project",
+      "path": "../HazPro.Marketing/HazPro.Marketing.csproj",
+      "msbuildProject": "../HazPro.Marketing/HazPro.Marketing.csproj"
+    },
+    "HazPro.Payroll/1.0.0": {
+      "type": "project",
+      "path": "../HazPro.Payroll/HazPro.Payroll.csproj",
+      "msbuildProject": "../HazPro.Payroll/HazPro.Payroll.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "HazPro.HR >= 1.0.0",
+      "HazPro.Marketing >= 1.0.0",
+      "HazPro.Payroll >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\erymn\\.nuget\\packages\\": {},
@@ -39,7 +99,17 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Sinau\\DotNet\\ModularMonolith\\learn-modularmonilith-implementation\\src\\HazPro.HR\\HazPro.HR.csproj": {
+              "projectPath": "D:\\Sinau\\DotNet\\ModularMonolith\\learn-modularmonilith-implementation\\src\\HazPro.HR\\HazPro.HR.csproj"
+            },
+            "D:\\Sinau\\DotNet\\ModularMonolith\\learn-modularmonilith-implementation\\src\\HazPro.Marketing\\HazPro.Marketing.csproj": {
+              "projectPath": "D:\\Sinau\\DotNet\\ModularMonolith\\learn-modularmonilith-implementation\\src\\HazPro.Marketing\\HazPro.Marketing.csproj"
+            },
+            "D:\\Sinau\\DotNet\\ModularMonolith\\learn-modularmonilith-implementation\\src\\HazPro.Payroll\\HazPro.Payroll.csproj": {
+              "projectPath": "D:\\Sinau\\DotNet\\ModularMonolith\\learn-modularmonilith-implementation\\src\\HazPro.Payroll\\HazPro.Payroll.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -2,7 +2,7 @@ using HazPro.Payroll.Model;
 
 namespace HazPro.Payroll.Services;
 
-internal class InvoiceService
+internal class InvoiceService : IInvoiceService
 {
     public List<InvoiceDto> ListInvoices()
     {

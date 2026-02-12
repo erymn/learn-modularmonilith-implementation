@@ -72,6 +72,21 @@
    
    ![](assets/2026-02-11-17-23-19-{BF8E0225-80D3-4045-AFB7-750306944C18}.png)
 7. Integrating Modules in Host App
+   - Add Service Registration in each module
+     
+     ![](assets/2026-02-11-17-35-04-{335B0D35-4AA0-4E0F-B8C8-93E6ACE498F6}.png)
+     
+     ![](assets/2026-02-11-17-37-36-{0055DA61-5687-428F-9CBF-42E67661E2A7}.png)
+     
+     ![](assets/2026-02-11-17-41-18-{FB9BC6DC-3E51-4730-A14E-42E586E22831}.png)
    
+   - Register Module Service in the Host App
+     
+     ![](assets/2026-02-11-17-44-29-{84D4387C-1241-4747-97CE-90C6972FD742}.png)
    
+   - Map the Endpoints for each module
+     
+     ![](assets/2026-02-11-17-49-01-{DB7BBCE5-40DD-40BD-9D60-21BAAEEC4A40}.png)
+   
+   - 
 8. 

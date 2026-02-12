@@ -2,7 +2,7 @@ using HazPro.Marketing.Model;
 
 namespace HazPro.Marketing.Services;
 
-internal class CampaignService
+internal class CampaignService : ICampaignService
 {
     public List<CampaignDto> ListCampaigns()
     {
