@@ -123,4 +123,14 @@
 9. Configure FastEndpoints in Host Application
    
    ![](assets/2026-02-12-14-00-44-{E4E23BD2-4C24-43B0-9308-34AA470119AD}.png)
-10. 
+10. Modeling Entities and Separating DTO's
+    
+    The key reason:
+    - `Separation of concern`, entity mewakili core bisnis domain model. DTO didesign untuk data transfer antar layer
+    
+    - `Flexibility & Evolution`, entity mungkin memiliki perbedaan dengan DTO. Perubahan dari cara present data seharusnya tidak mempengaruhi core bisnis
+    
+    - `Data Integrity & Encapsulation`, Entity bisa memiliki logic bisnis dan rule validasi. Dengan tetap memisahkannya dari DTO, kita bisa memastikan bahwa rule akan konsisten terhadap data kita. DTO biasanya secara struktur lebih simple dan fokus pada data transport
+      
+      
+11. 
