@@ -1,4 +1,3 @@
-using HazPro.HR.Model;
 using HazPro.HR.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc;

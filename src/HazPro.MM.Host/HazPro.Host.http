@@ -15,3 +15,20 @@ Accept: application/json
 GET {{Host_HostAddress}}payroll/invoices
 Accept: application/json
 ###
+
+### Endpoint Implementation using FastEndpoints
+### HR
+GET {{Host_HostAddress}}api/hr/employees
+Accept: application/json
+###
+
+### Marketing
+GET {{Host_HostAddress}}api/marketing/campaigns
+Accept: application/json
+###
+
+### Payroll
+GET {{Host_HostAddress}}api/payroll/invoices
+Accept: application/json
+###
+###

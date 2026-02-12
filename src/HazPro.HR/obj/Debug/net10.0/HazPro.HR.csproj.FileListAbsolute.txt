@@ -21,3 +21,4 @@ D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.
 D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.HR\obj\Debug\net10.0\refint\HazPro.HR.dll
 D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.HR\obj\Debug\net10.0\HazPro.HR.pdb
 D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.HR\obj\Debug\net10.0\ref\HazPro.HR.dll
+D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.HR\obj\Debug\net10.0\HazPro.HR.csproj.AssemblyReference.cache
