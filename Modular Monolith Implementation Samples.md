@@ -88,5 +88,7 @@
      
      ![](assets/2026-02-11-17-49-01-{DB7BBCE5-40DD-40BD-9D60-21BAAEEC4A40}.png)
    
-   - 
+   - Add http file in solution to test the code
+     
+     ![](assets/2026-02-12-10-43-05-{0DD93940-3759-4AF8-82EC-B7C38AB65E7C}.png)
 8. 
