@@ -11,7 +11,7 @@ public static class HREndpoints
     {
         app.MapGet("/hr/employees", ([FromServices] IEmployeeServices employeeService) =>
         {
-            return employeeService.ListEmployees();
+            return employeeService.ListEmployeesAsync();
         });
     }
 }

@@ -156,4 +156,7 @@
     ![](assets/2026-02-12-17-07-05-{00428631-3A4B-4E52-8885-7658CA3CD63A}.png)
     
     ![](assets/2026-02-12-17-07-19-{C9E0521D-8B9F-4920-A9FB-B2B41A50A80D}.png)
-12. 
+12. Updating Service Classes to use Repositories
+    
+    ![](assets/2026-02-13-09-55-48-image.png)
+13. 
