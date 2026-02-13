@@ -4,5 +4,6 @@ namespace HazPro.HR.Services;
 
 public interface IEmployeeServices
 {
-    List<EmployeeDto> ListEmployees();
+    Task<List<EmployeeDto>> ListEmployeesAsync();
+    Task<EmployeeDto> GetEmployeeByIdAsync(int id);
 }
