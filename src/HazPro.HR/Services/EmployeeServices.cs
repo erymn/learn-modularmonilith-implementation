@@ -3,19 +3,6 @@ using HazPro.HR.Repositories;
 
 namespace HazPro.HR.Services;
 
-internal class HardCodedEmployeeServices
-{
-    public List<EmployeeDto> ListEmployees()
-    {
-        return new List<EmployeeDto>()
-        {
-            new EmployeeDto(1, "Ery MN", DateTime.Now, "Senior Dev", "IT Dev"),
-            new EmployeeDto(2, "Nirwana", DateTime.Now, "Web Dev", "IT Dev"),
-            new EmployeeDto(3, "Guns And Roses", DateTime.Now, "QA", "IT Dev")
-        };
-    }
-}
-
 internal class EmployeeServices : IEmployeeServices
 {
     private readonly IEmployeeRepository _employeeRepository;
@@ -27,8 +14,14 @@ internal class EmployeeServices : IEmployeeServices
 
     public async Task<List<EmployeeDto>> ListEmployeesAsync()
     {
-        //TODO: will implement this next
-        return new List<EmployeeDto>();
+        var employees = await _employeeRepository.ListAllAsync();
+        return employees.Select(e => new EmployeeDto(
+            e.EmployeeId,
+            $"{e.FirstName} {e.LastName}",
+            e.DateOfHire,
+            e.Position,
+            e.DepartmentName
+        )).ToList();
     }
 
     public async Task<EmployeeDto> GetEmployeeByIdAsync(int id)
@@ -42,5 +35,4 @@ internal class EmployeeServices : IEmployeeServices
             employee.DepartmentName
         );
     }
-
 }
