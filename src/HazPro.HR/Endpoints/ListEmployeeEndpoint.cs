@@ -21,7 +21,7 @@ public class ListEmployeeEndpoint : EndpointWithoutRequest<List<EmployeeDto>>
 
     public override async Task HandleAsync(CancellationToken ct)
     {
-        List<EmployeeDto> employees = _employeeServices.ListEmployees();
+        List<EmployeeDto> employees = await _employeeServices.ListEmployeesAsync();
         await Send.OkAsync(employees);
     }
 }

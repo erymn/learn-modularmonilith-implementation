@@ -2,7 +2,19 @@
   "version": 3,
   "targets": {
     "net10.0": {
-<<<<<<< HEAD
+      "Ardalis.GuardClauses/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Ardalis.GuardClauses.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Ardalis.GuardClauses.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "FastEndpoints/7.2.0": {
         "type": "package",
         "dependencies": {
@@ -107,18 +119,6 @@
         "runtime": {
           "lib/net8.0/FluentValidation.dll": {
             "related": ".xml"
-=======
-      "Ardalis.GuardClauses/5.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/Ardalis.GuardClauses.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Ardalis.GuardClauses.dll": {
-            "related": ".pdb;.xml"
->>>>>>> modeling-entities
           }
         }
       },
@@ -126,11 +126,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
-<<<<<<< HEAD
+          "Ardalis.GuardClauses": "5.0.0",
           "FastEndpoints": "7.2.0"
-=======
-          "Ardalis.GuardClauses": "5.0.0"
->>>>>>> modeling-entities
         },
         "compile": {
           "bin/placeholder/HazPro.HR.dll": {}
@@ -177,7 +174,29 @@
     }
   },
   "libraries": {
-<<<<<<< HEAD
+    "Ardalis.GuardClauses/5.0.0": {
+      "sha512": "jVPRvLw0xIUFto2cMrKgRYADWIHbEEfzZHGiU/swwNgl1zo28Q1zfSa3VUC3C0s9DyhFDPSaF4dEDQRyTZUcyQ==",
+      "type": "package",
+      "path": "ardalis.guardclauses/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "ardalis.guardclauses.5.0.0.nupkg.sha512",
+        "ardalis.guardclauses.nuspec",
+        "icon.png",
+        "lib/net8.0/Ardalis.GuardClauses.dll",
+        "lib/net8.0/Ardalis.GuardClauses.pdb",
+        "lib/net8.0/Ardalis.GuardClauses.xml",
+        "lib/netstandard2.0/Ardalis.GuardClauses.dll",
+        "lib/netstandard2.0/Ardalis.GuardClauses.pdb",
+        "lib/netstandard2.0/Ardalis.GuardClauses.xml",
+        "lib/netstandard2.1/Ardalis.GuardClauses.dll",
+        "lib/netstandard2.1/Ardalis.GuardClauses.pdb",
+        "lib/netstandard2.1/Ardalis.GuardClauses.xml"
+      ]
+    },
     "FastEndpoints/7.2.0": {
       "sha512": "igYC/SHrNwv8Ek+o0rjGALIONCIuQP7a6CMLSHGKRzFpjwdbI4JvsLlAfkb720bIF3B/dH1zRcEZejHeyDL2Rg==",
       "type": "package",
@@ -288,29 +307,6 @@
         "fluentvalidation.nuspec",
         "lib/net8.0/FluentValidation.dll",
         "lib/net8.0/FluentValidation.xml"
-=======
-    "Ardalis.GuardClauses/5.0.0": {
-      "sha512": "jVPRvLw0xIUFto2cMrKgRYADWIHbEEfzZHGiU/swwNgl1zo28Q1zfSa3VUC3C0s9DyhFDPSaF4dEDQRyTZUcyQ==",
-      "type": "package",
-      "path": "ardalis.guardclauses/5.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE",
-        "README.md",
-        "ardalis.guardclauses.5.0.0.nupkg.sha512",
-        "ardalis.guardclauses.nuspec",
-        "icon.png",
-        "lib/net8.0/Ardalis.GuardClauses.dll",
-        "lib/net8.0/Ardalis.GuardClauses.pdb",
-        "lib/net8.0/Ardalis.GuardClauses.xml",
-        "lib/netstandard2.0/Ardalis.GuardClauses.dll",
-        "lib/netstandard2.0/Ardalis.GuardClauses.pdb",
-        "lib/netstandard2.0/Ardalis.GuardClauses.xml",
-        "lib/netstandard2.1/Ardalis.GuardClauses.dll",
-        "lib/netstandard2.1/Ardalis.GuardClauses.pdb",
-        "lib/netstandard2.1/Ardalis.GuardClauses.xml"
->>>>>>> modeling-entities
       ]
     },
     "HazPro.HR/1.0.0": {
