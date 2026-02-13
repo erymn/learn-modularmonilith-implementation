@@ -12,7 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddFastEndpoints();
 
 //Register Module into Host App
-builder.Services.AddHRServices();
+builder.Services.AddHRServices(builder.Configuration);
 builder.Services.AddMarketingServices();
 builder.Services.AddPayrollServices();
 

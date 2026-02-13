@@ -137,9 +137,6 @@
     - `Flexibility & Evolution`, entity mungkin memiliki perbedaan dengan DTO. Perubahan dari cara present data seharusnya tidak mempengaruhi core bisnis
     
     - `Data Integrity & Encapsulation`, Entity bisa memiliki logic bisnis dan rule validasi. Dengan tetap memisahkannya dari DTO, kita bisa memastikan bahwa rule akan konsisten terhadap data kita. DTO biasanya secara struktur lebih simple dan fokus pada data transport
-      <<<<<<< HEAD
-
-11. =======
     
     Step to modeling entities
     
@@ -159,7 +156,7 @@
       
       ![](assets/2026-02-12-16-43-49-{A8EFD616-80B8-48DC-901C-080DAC72EA4B}.png)
 
-12. Defining Repository Interface
+11. Defining Repository Interface
     
     ![](assets/2026-02-12-17-06-38-{AF27DAAE-6327-4D8E-B623-E40F7EF81D98}.png)
     
@@ -167,8 +164,89 @@
     
     ![](assets/2026-02-12-17-07-19-{C9E0521D-8B9F-4920-A9FB-B2B41A50A80D}.png)
 
-13. Updating Service Classes to use Repositories
+12. Updating Service Classes to use Repositories
     
     ![](assets/2026-02-13-09-55-48-image.png)
 
-14. > > > > > > > modeling-entities
+13. Integrating with EF Core (menggunakan SQLite Database)
+    
+    Package yang harus diinstall:
+    
+    Install di project HR:
+    
+    ```powershell
+    dotnet add package Microsoft.EntityFrameworkCore.SQLite
+    dotnet add package Microsoft.EntityFrameworkCore
+    ```
+    
+    Install di Host App:
+    
+    ```powershell
+    dotnet add package Microsoft.EntityFrameworkCore.Design
+    ```
+    
+    Tambahkan connection strings ke appsettings.json di Host App
+    
+    ```json
+    "ConnectionStrings": {
+        "HazProHRConnection": "Data Source=HazProHR.db"
+      }
+    ```
+    
+    Jika Payroll dan Marketing mau ditambahkan, maka gunakan nama lain dan database lain.
+    
+    **Create Context Class**
+    
+    ![](assets/2026-02-13-14-22-35-{CC19AD51-A1A1-43C3-BF62-2854BD5B7E18}.png)
+    
+    Untuk Apply setiap table yang digunakan, maka lebih baik dipisahkan pada suatu folder Configuration seperti pada gambar agar lebih manageable.
+    
+    ![](assets/2026-02-13-14-27-16-{40309A46-8158-48C7-A1F2-8284F7C96FBD}.png)
+    
+    lalu kemudian panggil dari AppDbContext class
+    
+    ![](assets/2026-02-13-14-28-55-{42DC27E8-50A7-4D31-9EA2-8E7869A1FF12}.png)
+    
+    **Registering the Repository, the Service and the DbContext**
+    
+    Registering database service ke HRExtensions
+    
+    ![](assets/2026-02-13-14-42-36-{7C217FDF-3AC7-417B-88EA-580E5EF9EC17}.png)
+    
+    **Creating Seed Data**
+    
+    Untuk membuat data, bisa menggunakan builder di configuration dan menggunakan metode `HasData`.
+    
+    ![](assets/2026-02-13-14-49-08-{6BD8EB63-E241-4100-A52F-002198605485}.png)
+    
+    **Create migrations and update database**
+    
+    Create the migrations
+    
+    ![](assets/2026-02-13-14-51-18-{5F76BD07-8A7A-44ED-8FF8-CE17B57CC997}.png)
+    
+    pastikan jalan di host project
+    
+    ```powershell
+    dotnet ef migrations add Initial --context AppDbContext --project ..\HazPro.HR\HazPro.HR.csproj --startup-project .\HazPro.MM.Host\HazPro.MM.Host.csproj --output-dir Data/Migrat
+    
+    atau gunakan ini
+    
+    dotnet ef migrations add InitialCreate --context AppDbContext --project ..\HazPro.HR --startup-project .
+    ```
+
+14. Update the database
+    
+    ```powershell
+    dotnet ef database update
+    ```
+    
+    ![](assets/2026-02-13-16-43-06-{79262466-8CCC-46EB-BB2A-650846D8A2BB}.png)
+    
+    ![](assets/2026-02-13-16-43-19-{FC949CCA-11C4-4018-B3A4-FD597F53D726}.png)
+
+15. Creating Repository to Interact with dbcontext
+    
+    ![](assets/2026-02-13-17-15-42-{903F0B35-34BB-4528-A3AD-CC09447A56BE}.png)
+
+16. 
