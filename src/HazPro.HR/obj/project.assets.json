@@ -15,6 +15,19 @@
           }
         }
       },
+      "AutoMapper/14.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "FastEndpoints/7.2.0": {
         "type": "package",
         "dependencies": {
@@ -447,6 +460,21 @@
         "lib/netstandard2.1/Ardalis.GuardClauses.xml"
       ]
     },
+    "AutoMapper/14.0.0": {
+      "sha512": "OC+1neAPM4oCCqQj3g2GJ2shziNNhOkxmNB9cVS8jtx4JbgmRzLcUOxB9Tsz6cVPHugdkHgCaCrTjjSI0Z5sCQ==",
+      "type": "package",
+      "path": "automapper/14.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.14.0.0.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/net8.0/AutoMapper.dll",
+        "lib/net8.0/AutoMapper.xml"
+      ]
+    },
     "FastEndpoints/7.2.0": {
       "sha512": "igYC/SHrNwv8Ek+o0rjGALIONCIuQP7a6CMLSHGKRzFpjwdbI4JvsLlAfkb720bIF3B/dH1zRcEZejHeyDL2Rg==",
       "type": "package",
@@ -835,6 +863,7 @@
   "projectFileDependencyGroups": {
     "net10.0": [
       "Ardalis.GuardClauses >= 5.0.0",
+      "AutoMapper >= 14.0.0",
       "FastEndpoints >= 7.2.0",
       "MediatR >= 11.0.0",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 11.1.0",
@@ -896,6 +925,10 @@
           "Ardalis.GuardClauses": {
             "target": "Package",
             "version": "[5.0.0, )"
+          },
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[14.0.0, )"
           },
           "FastEndpoints": {
             "target": "Package",

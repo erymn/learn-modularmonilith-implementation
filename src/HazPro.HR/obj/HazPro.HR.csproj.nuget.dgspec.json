@@ -55,6 +55,10 @@
               "target": "Package",
               "version": "[5.0.0, )"
             },
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[14.0.0, )"
+            },
             "FastEndpoints": {
               "target": "Package",
               "version": "[7.2.0, )"
