@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HazPro.MM.Host")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+335cbd6db51e70d16a03b10decf26b785c9cbe9c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+12b5ecbdbd1544f3289344441050b5b2a8ed5283")]
 [assembly: System.Reflection.AssemblyProductAttribute("HazPro.MM.Host")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HazPro.MM.Host")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
