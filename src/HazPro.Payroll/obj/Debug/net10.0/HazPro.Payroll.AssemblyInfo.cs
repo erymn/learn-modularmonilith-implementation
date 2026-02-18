@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HazPro.Payroll")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+249494df91702e2cd5da5758644a8dd741958b5c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+335cbd6db51e70d16a03b10decf26b785c9cbe9c")]
 [assembly: System.Reflection.AssemblyProductAttribute("HazPro.Payroll")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HazPro.Payroll")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

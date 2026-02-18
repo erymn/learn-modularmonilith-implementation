@@ -36,15 +36,16 @@ internal class EmployeeServices : IEmployeeServices
         );
     }
 
-    public async Task<Employee> AddEmployeeAsync(EmployeeDto employeeDto)
+    public async Task<EmployeeDto> AddEmployeeAsync(EmployeeDto employeeDto)
     {
         Employee employee = new Employee(employeeDto.EmployeeId, employeeDto.FullName.Split(" ")[0],
             employeeDto.FullName.Split(" ")[1],
             employeeDto.DateOfHire, employeeDto.Position, employeeDto.Department, 10);
 
         await _employeeRepository.AddAsync(employee);
-        
-        return employee;
+
+        return new EmployeeDto(employee.EmployeeId, $"{employee.FirstName} {employee.LastName}", employee.DateOfHire
+            , employee.Position, employee.DepartmentName);
     }
 
     public async Task<bool> UpdateEmployeeAsync(EmployeeDto reqEmployeeDto)
