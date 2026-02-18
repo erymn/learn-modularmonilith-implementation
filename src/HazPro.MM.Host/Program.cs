@@ -22,7 +22,7 @@ var app = builder.Build();
 app.MapFastEndpoints();
 
 //Map the endpoints for each modules into Host App
-app.MapHREndpoints();
+// app.MapHREndpoints();
 app.MapMarketingEndpoints();
 app.MapPayrollEndpoints();
 
