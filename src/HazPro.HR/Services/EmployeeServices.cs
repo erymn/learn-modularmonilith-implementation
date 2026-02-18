@@ -35,4 +35,34 @@ internal class EmployeeServices : IEmployeeServices
             employee.DepartmentName
         );
     }
+
+    public async Task<Employee> AddEmployeeAsync(EmployeeDto employeeDto)
+    {
+        Employee employee = new Employee(employeeDto.EmployeeId, employeeDto.FullName.Split(" ")[0],
+            employeeDto.FullName.Split(" ")[1],
+            employeeDto.DateOfHire, employeeDto.Position, employeeDto.Department, 10);
+
+        await _employeeRepository.AddAsync(employee);
+        
+        return employee;
+    }
+
+    public async Task<bool> UpdateEmployeeAsync(EmployeeDto reqEmployeeDto)
+    {
+        Employee employeeOld = await _employeeRepository.GetByIdAsync(reqEmployeeDto.EmployeeId);
+        Employee employeeNew = new Employee(employeeOld.EmployeeId, reqEmployeeDto.FullName.Split(" ")[0],
+            reqEmployeeDto.FullName.Split(" ")[1], employeeOld.DateOfHire, employeeOld.Position,
+            employeeOld.DepartmentName, 20);
+        
+        await _employeeRepository.UpdateAsync(employeeNew);
+        
+        return true;
+    }
+
+    public async Task<bool> DeleteEmployeeAsync(int id)
+    {
+        Employee employee = await _employeeRepository.GetByIdAsync(id);
+        await _employeeRepository.DeleteAsync(employee);
+        return true;
+    }
 }
