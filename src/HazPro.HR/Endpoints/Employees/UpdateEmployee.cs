@@ -1,17 +1,19 @@
 using FastEndpoints;
+using HazPro.HR.Features.Employees;
 using HazPro.HR.Model;
 using HazPro.HR.Services;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HazPro.HR.Endpoints.Employees;
 
 public class UpdateEmployee : Endpoint<UpdateEmployeeRequest>
 {
-    private readonly IEmployeeServices _employeeServices;
-
-    public UpdateEmployee(IEmployeeServices employeeServices)
+    private readonly IMediator _mediator;
+    
+    public UpdateEmployee(IMediator mediator)
     {
-        _employeeServices = employeeServices;
+        _mediator = mediator;
     }
 
     public override void Configure()
@@ -27,16 +29,14 @@ public class UpdateEmployee : Endpoint<UpdateEmployeeRequest>
             await Send.ResponseAsync("ID Mismatch", 400, ct);
             return;
         }
-        
-        var success = await _employeeServices.UpdateEmployeeAsync(req.EmployeeDto);
-        if (!success)
-        {
-            await Send.NotFoundAsync(ct);
-        }
-        else
-        {
+
+        var command = new UpdateEmployeeCommand(req.Id, req.EmployeeDto);
+        var result = await _mediator.Send(command, ct);
+
+        if (result)
             await Send.NoContentAsync(ct);
-        }
+        else
+            await Send.NotFoundAsync(ct);
     }
 }
 

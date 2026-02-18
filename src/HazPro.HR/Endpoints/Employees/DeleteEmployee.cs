@@ -1,16 +1,18 @@
 using FastEndpoints;
+using HazPro.HR.Features.Employees;
 using HazPro.HR.Services;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HazPro.HR.Endpoints.Employees;
 
 public class DeleteEmployee : Endpoint<DeleteEmployeeRequest>
 {
-    private readonly IEmployeeServices _employeeServices;
+    private readonly IMediator _mediator;
 
-    public DeleteEmployee(IEmployeeServices employeeServices)
+    public DeleteEmployee(IMediator mediator)
     {
-        _employeeServices = employeeServices;
+        _mediator = mediator;
     }
 
     public override void Configure()
@@ -21,8 +23,11 @@ public class DeleteEmployee : Endpoint<DeleteEmployeeRequest>
 
     public override async Task HandleAsync(DeleteEmployeeRequest req, CancellationToken ct)
     {
-        var success = await _employeeServices.DeleteEmployeeAsync(req.Id);
-        if (!success)
+        var command = new DeleteEmployeeCommand(req.Id);
+        var result = await _mediator.Send(command, ct);
+        
+        //var success = await _employeeServices.DeleteEmployeeAsync(req.Id);
+        if (!result)
         {
             await Send.NotFoundAsync(ct);
         }

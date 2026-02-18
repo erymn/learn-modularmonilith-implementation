@@ -249,4 +249,65 @@
     
     ![](assets/2026-02-13-17-15-42-{903F0B35-34BB-4528-A3AD-CC09447A56BE}.png)
 
-16. 
+16. Implement CQRS and MediatR
+    
+    ```powershell
+    dotnet add package MediatR
+    dotnet add package MediatR.Extensions.Microsoft.DependencyInjection
+    ```
+    
+    Register MediatR di class extensions (HRExtensions sebagai contohnya):
+    
+    ```csharp
+    services.AddMediatR(typeof(HRServicesExtensions).Assembly);
+    ```
+    
+    ![](assets/2026-02-18-14-50-47-{6985BDEE-FD07-4EF3-9BC0-38C04331BA02}.png)
+    
+    **Create a Query Record**
+    
+    Digunakan untuk mewakili sebuah query yang akan mengambil Employee By ID
+    
+    ![](assets/2026-02-18-14-54-31-{A7495043-5018-448E-8A66-C8A538CCEA41}.png) 
+    
+    Akan dibuat record query yang akan mengambil informasi Employee By Id dan akan mengembalikan dalam bentuk EmployeeDto
+    
+    **Create Query Handler**
+    
+    Yang akan bertanggungjawab untuk mengisi record GetEmployeeByIdQuery. Handler ini akan menggunakan EF Core untuk fetch data dari database.
+    
+    ![](assets/2026-02-18-14-59-43-{C2693F2A-33CE-47FF-92C9-A58D7DE51CC8}.png)
+    
+    ![](assets/2026-02-18-15-02-43-{2A8D0619-809C-4CC2-8695-2C864DD2BFBD}.png)
+    
+    **Updating the GetEmployeeById Endpoint**
+    
+    update endpoint dengan menggunakan MediatR daripada langsung dengan memanggil service.
+    
+    Endpoint sebelum diubah ke MediatR
+    
+    ![](assets/2026-02-18-15-04-47-{03D3F116-5D10-4849-9E0E-1027101D4271}.png)
+    
+    Setelah diubah ke MediatR
+    
+    Ubah di constructor dulu, dari `IEmployeeServices `menjadi IMediatR 
+    
+    ![](assets/2026-02-18-15-07-48-{60FD851F-F646-42C6-9913-32CDAB8ED7B5}.png)
+    
+    Ubah di HandleAsync
+    
+    ![](assets/2026-02-18-15-10-55-{C7F05449-B5BB-4200-B064-D8191CBE6E2C}.png)
+    
+    Creating a New Employee with a Command
+    
+    ![](assets/2026-02-18-15-14-17-{9E1EA482-CE7C-499A-82FA-E66418F3980A}.png)
+    
+    Create Handler
+    
+    ![](assets/2026-02-18-15-57-24-{9BB94316-DF70-4148-B891-13C94B8C0510}.png)
+    
+    ![](assets/2026-02-18-16-21-34-{673B0D72-9BE2-4881-A295-7E277A6B3AC4}.png)
+    
+    
+
+17. 

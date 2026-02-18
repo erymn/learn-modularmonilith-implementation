@@ -1,6 +1,7 @@
 using HazPro.HR.Data;
 using HazPro.HR.Repositories;
 using HazPro.HR.Services;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,6 +19,8 @@ public static class HRServicesExtensions
         //register database service
         var connectionString = configuration.GetConnectionString("HazProHRConnection");
         services.AddDbContext<AppDbContext>(options => options.UseSqlite(connectionString));
+
+        services.AddMediatR(typeof(HRServicesExtensions).Assembly);
         
         return services;
     }
