@@ -187,3 +187,8 @@ D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.
 D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.MM.Host\bin\Debug\net10.0\runtimes\win-arm64\native\e_sqlite3.dll
 D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.MM.Host\bin\Debug\net10.0\runtimes\win-x64\native\e_sqlite3.dll
 D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.MM.Host\bin\Debug\net10.0\runtimes\win-x86\native\e_sqlite3.dll
+D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.MM.Host\bin\Debug\net10.0\AutoMapper.dll
+D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.MM.Host\bin\Debug\net10.0\MediatR.dll
+D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.MM.Host\bin\Debug\net10.0\MediatR.Contracts.dll
+D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.MM.Host\bin\Debug\net10.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+D:\Sinau\DotNet\ModularMonolith\learn-modularmonilith-implementation\src\HazPro.MM.Host\bin\Debug\net10.0\Ardalis.Result.dll

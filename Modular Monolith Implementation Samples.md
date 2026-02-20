@@ -314,4 +314,16 @@
     
     ![](assets/2026-02-18-17-09-51-{EF03562F-BB17-4C1E-9171-0B4B397008C9}.png)
 
-18. 
+18. Adding CQRS Command for Updating Employee Wage
+    
+    ![](assets/2026-02-19-13-40-40-{6B168C84-E459-4DE8-8281-5271C8F17462}.png)
+
+19. Refactor UpdateWage to Return a Result<T> using Result Pattern
+    
+    Sebelumnya install dulu `Ardalis.Result<T>` component nuget
+    
+    ```powershell
+    Install-package Ardalis.Result
+    ```
+    
+    

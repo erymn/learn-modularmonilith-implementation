@@ -22,6 +22,49 @@ GET {{Host_HostAddress}}api/hr/employees
 Accept: application/json
 ###
 
+### Create New Employee
+POST {{Host_HostAddress}}api/hr/employees
+Content-Type: application/json 
+Accept: application/json
+
+{
+    "employeeId":3,
+    "fullName":"Hassan Sule",
+    "dateOfHire": "2026-01-01",
+    "position": "Digital Content",
+    "department": "Digital Marketing"
+}
+###
+
+### Update Employee
+POST {{Host_HostAddress}}api/hr/employees/3
+Content-Type: application/json
+Accept: application/json
+
+{
+  "employee": 
+    {
+      "employeeId":3,
+      "fullName":"Hassan Sule",
+      "dateOfHire": "2026-01-01",
+      "position": "Digital Content Creator",
+      "department": "Digital Marketing"
+    }
+}
+
+###
+
+### Update Hourly Wage
+PUT {{Host_HostAddress}}api/hr/employees/1/wage
+Content-Type: application/json
+
+{
+  "newHourlyWage":17
+}
+
+
+###
+
 ### Marketing
 GET {{Host_HostAddress}}api/marketing/campaigns
 Accept: application/json
