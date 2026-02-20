@@ -1,3 +1,4 @@
+using Ardalis.Result;
 using HazPro.HR.Model;
 using HazPro.HR.Repositories;
 
@@ -20,7 +21,8 @@ internal class EmployeeServices : IEmployeeServices
             $"{e.FirstName} {e.LastName}",
             e.DateOfHire,
             e.Position,
-            e.DepartmentName
+            e.DepartmentName,
+            e.HourlyWage
         )).ToList();
     }
 
@@ -32,7 +34,8 @@ internal class EmployeeServices : IEmployeeServices
             $"{employee.FirstName} {employee.LastName}",
             employee.DateOfHire,
             employee.Position,
-            employee.DepartmentName
+            employee.DepartmentName,
+            employee.HourlyWage
         );
     }
 
@@ -45,7 +48,7 @@ internal class EmployeeServices : IEmployeeServices
         await _employeeRepository.AddAsync(employee);
 
         return new EmployeeDto(employee.EmployeeId, $"{employee.FirstName} {employee.LastName}", employee.DateOfHire
-            , employee.Position, employee.DepartmentName);
+            , employee.Position, employee.DepartmentName, employee.HourlyWage);
     }
 
     public async Task<bool> UpdateEmployeeAsync(EmployeeDto reqEmployeeDto)
@@ -65,5 +68,18 @@ internal class EmployeeServices : IEmployeeServices
         Employee employee = await _employeeRepository.GetByIdAsync(id);
         await _employeeRepository.DeleteAsync(employee);
         return true;
+    }
+
+    public async Task<Result<bool>> UpdateEmployeeWageAsync(int employeeId, decimal newHourlyWage)
+    {
+        var employee = await _employeeRepository.GetByIdAsync(employeeId);
+        if (employee is null)
+        {
+            return Result.Error("Employee not found");
+        }
+            
+        employee.UpdateHourlyWage(newHourlyWage);
+        await _employeeRepository.UpdateAsync(employee);
+        return Result.Success(true);
     }
 }
